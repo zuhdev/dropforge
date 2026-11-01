@@ -1,0 +1,15 @@
+node_modules/
+.next/
+artifacts/
+cache/
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.err.log
+data/
+*.tsbuildinfo
+typechain-types/
+coverage.json

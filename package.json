@@ -1,0 +1,37 @@
+{
+  "name": "dropforge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "ui": "next dev",
+    "build": "next build",
+    "vercel-build": "next build",
+    "start": "next start",
+    "compile": "hardhat compile",
+    "test": "hardhat test contracts/test/DropForgeDistributor.test.js",
+    "check:testnet": "hardhat run scripts/preflight.ts --network botTestnet",
+    "wallet:testnet": "node scripts/create-testnet-wallet.cjs",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network botTestnet",
+    "verify:testnet": "hardhat verify --network botTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.17",
+    "typescript": "^5.7.2",
+    "next": "^15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/node": "^22.10.2"
+  },
+  "dependencies": {
+    "@openzeppelin/merkle-tree": "^1.0.7",
+    "csv-parse": "^5.6.0",
+    "keccak": "^3.0.4",
+    "viem": "^2.21.54",
+    "wagmi": "^2.14.11"
+  }
+}
